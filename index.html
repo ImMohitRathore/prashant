@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Un-Rejectable Valentine</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Romantic floating hearts and teddies (bottom to top) -->
+  <div id="floating-romantic" class="floating-romantic" aria-hidden="true">
+    <span class="float-item float-heart">❤️</span>
+    <span class="float-item float-heart">💕</span>
+    <span class="float-item float-heart">💗</span>
+    <span class="float-item float-heart">💖</span>
+    <span class="float-item float-heart">♥</span>
+    <span class="float-item float-teddy">🧸</span>
+    <span class="float-item float-teddy">🐻</span>
+    <span class="float-item float-heart">❤️</span>
+    <span class="float-item float-heart">💕</span>
+    <span class="float-item float-teddy">🧸</span>
+    <span class="float-item float-heart">💗</span>
+    <span class="float-item float-teddy">🐻</span>
+    <span class="float-item float-heart">💖</span>
+    <span class="float-item float-heart">♥</span>
+    <span class="float-item float-teddy">🧸</span>
+    <span class="float-item float-heart">❤️</span>
+    <span class="float-item float-heart">💕</span>
+    <span class="float-item float-teddy">🐻</span>
+    <span class="float-item float-heart">💗</span>
+    <span class="float-item float-heart">💖</span>
+  </div>
+  <div id="app">
+    <!-- Valentine ask card - full screen -->
+    <section id="valentine-card" class="screen hidden valentine-fullscreen">
+      <div class="valentine-content">
+        <div class="character-card">
+          <img src="assets/Prashant_BSDK .png" alt="Valentine" class="valentine-photo" />
+        </div>
+        <h2 class="valentine-question"><span id="display-name11111"> Hey </span>! Cutie one message for you</h2>
+        <div class="buttons-wrap">
+          <button type="button" id="btn-yes" class="btn btn-yes"> Show Message</button>
+          <button type="button" id="btn-no" class="btn btn-no"> Mark as Unread </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hangout Message Card -->
+    <section id="hangout-card" class="screen hidden valentine-fullscreen">
+      <div class="valentine-content">
+        <div class="character-card">
+          <img src="assets/first.jpeg" alt="Hangout" class="valentine-photo" />
+          <!-- Crying tears animation -->
+          <div class="tears-container hidden" id="tears-container">
+            <span class="tear tear-1">💧</span>
+            <!-- <span class="tear tear-2">💧</span>
+            <span class="tear tear-3">💧</span>
+            <span class="tear tear-4">💧</span>
+            <span class="tear tear-5">💧</span> -->
+            <span class="tear tear-6">💧</span>
+          </div>
+        </div>
+        <h2 class="valentine-question">
+          Hii ,
+        </h2>
+        <p class="hangout-message">Do you wanna hangout ?</p>
+        <div class="buttons-wrap">
+          <button type="button" id="btn-hangout-yes" class="btn btn-yes">Yes 😍</button>
+          <button type="button" id="btn-hangout-no" class="btn btn-no">No 🥺</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Valentine Week - day slides (after Yes) -->
+    <section id="valentine-week" class="screen hidden valentine-fullscreen">
+      <div class="day-slide-deco" aria-hidden="true">
+        <span class="day-deco day-deco--tl">❤️</span>
+        <span class="day-deco day-deco--tr">🧸</span>
+        <span class="day-deco day-deco--bl">💕</span>
+        <span class="day-deco day-deco--br">🐻</span>
+        <span class="day-deco day-deco--ml">💗</span>
+        <span class="day-deco day-deco--mr">🧸</span>
+      </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
